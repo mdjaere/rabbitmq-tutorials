@@ -3,7 +3,7 @@ import pika
 import sys
 
 connection = pika.BlockingConnection(pika.ConnectionParameters(
-        host='localhost'))
+        host='wssu-mjubu'))
 channel = connection.channel()
 
 channel.exchange_declare(exchange='logs',

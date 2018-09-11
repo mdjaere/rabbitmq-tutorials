@@ -9,7 +9,7 @@ if (args.length == 0) {
   process.exit(1);
 }
 
-amqp.connect('amqp://localhost', function(err, conn) {
+amqp.connect('amqp://wssu-mjubu', function(err, conn) {
   conn.createChannel(function(err, ch) {
     var ex = 'direct_logs';
 

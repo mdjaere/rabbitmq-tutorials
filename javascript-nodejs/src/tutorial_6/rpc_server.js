@@ -2,7 +2,7 @@
 
 var amqp = require('amqplib/callback_api');
 
-amqp.connect('amqp://localhost', function(err, conn) {
+amqp.connect('amqp://wssu-mjubu', function(err, conn) {
   conn.createChannel(function(err, ch) {
     var q = 'rpc_queue';
 

@@ -1,8 +1,9 @@
 #!/usr/bin/env python
 import pika
 
-connection = pika.BlockingConnection(pika.ConnectionParameters(
-        host='localhost'))
+connection = pika.BlockingConnection(
+    pika.ConnectionParameters(host='wssu-mjubu')
+)
 channel = connection.channel()
 
 
